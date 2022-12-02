@@ -33,8 +33,9 @@ int main() {
 		InsertNode(head, tmp);
 	}
 
-	printTreeInorder(head);
+	printTreeInorderPretty(head);
 }
+
 
 int BalanceFactor(AVLTreeNode * node){
 	int leftHeight = -1;
@@ -175,6 +176,27 @@ void printTreeInorder(AVLTreeNode* tree){
 	printf(" %d", *(tree->value));
 	if(tree->right != NULL){
 		printTreeInorder(tree->right);
+	}
+}
+
+void printTreeInorderPretty(AVLTreeNode* tree){
+	for(int i = tree->height; i >= 0; i--){
+		printTreeInorderOnlyAt(tree, i);
+		printf("\n");
+	}
+}
+void printTreeInorderOnlyAt(AVLTreeNode* tree, int depth){
+	if(tree->left != NULL){
+		printTreeInorderOnlyAt(tree->left, depth);
+	}
+	if(tree->height == depth){
+		printf(" %4d", *(tree->value));
+	} else {
+		printf("     ");
+	}
+
+	if(tree->right != NULL){
+		printTreeInorderOnlyAt(tree->right,depth);
 	}
 }
 

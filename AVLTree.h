@@ -21,5 +21,6 @@ void LRRotation(AVLTreeNode * node);
 void RLRotation(AVLTreeNode * node);
 AVLTreeNode* InitializeNewNode();
 void printTreeInorder(AVLTreeNode * tree);
-
+void printTreeInorderOnlyAt(AVLTreeNode* tree, int depth);
+void printTreeInorderPretty(AVLTreeNode* tree);
 
