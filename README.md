@@ -5,7 +5,7 @@ Fork this repository or clone it into your workspace
 
 ### Running the program
 This repository contains a compiled executable for this program. Simply run it and it will print out a corresponding BST.
-###Sample f.dat file
+### Sample f.dat file
 ```
 102
 123
