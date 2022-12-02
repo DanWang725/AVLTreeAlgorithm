@@ -42,4 +42,5 @@ This repository contains a compiled executable for this program. Simply run it a
 
 ## Contributors
 Author: Daniel Wang
+
 Authorized by: Joel Harder
